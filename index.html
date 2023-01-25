@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/image/favicon/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="src/js/glider-compat.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.gtranslate.net/widgets/v1.0.0/flags.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <script src="https://kit.fontawesome.com/c2eaa1e07a.js" crossorigin="anonymous"></script>
+    
+    
+    <link rel="stylesheet" href="src/css/home.css">
+    <title>PRED ENGENHARIA</title>
+</head>
+<body>
+    <section class="mycontainer" id="app">
+        <div class="whatsaap_fixed" data-bs-toggle="tooltip" data-bs-placement="right" title="Precisa de ajuda?"><a href="https://wa.me/552733375977?text=Ol%C3%A1%2C+vim+atrav%C3%A9s+do+site+e+gostaria+de+mais+informa%C3%A7%C3%B5es%21" target="_blank"><i class="fa-brands fa-square-whatsapp" ></i></a></div>
+        <div class="networks_fixed">
+          <div class="container_network_fixed">
+            <a href="https://www.youtube.com/@predengenharia3567" target="_blank"><i class="fa-brands fa-youtube youtube"></i></a>
+            <a href="https://br.linkedin.com/company/pred-engenharia" target="_blank"><i class="fa-brands fa-linkedin linkedin"></i></a>
+            <a href="https://www.facebook.com/PredEngenharia/?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook facebook"></i></a>
+            <a href="https://www.instagram.com/predengenharia/?igshid=NTdlMDg3MTY=" target="_blank"><i class="fa-brands fa-instagram instagram"></i></a>
+          </div>
+      
+        </div>
+        <header>
+            
+           
+            <nav>
+                <div class="control_nav">
+                    <div class="network_login">
+                        <div class="language">
+                            <div class="gtranslate_wrapper language__"></div>
+                        </div>
+                        <div class="network">
+                            <div class="main_whatsapp">
+                              <a href="https://wa.me/552733375977?text=Ol%C3%A1%2C+vim+atrav%C3%A9s+do+site+e+gostaria+de+mais+informa%C3%A7%C3%B5es%21" target="_blank">
+                                <i class="fa-brands fa-whatsapp whatsapp"></i>
+                                <span class="number">+55 27 3337-5977</span>
+                              </a>
+                                
+                            </div>
+                            <div class="separation"></div>
+                            <div  class="networks">
+                                <a href="https://www.youtube.com/@predengenharia3567" target="_blank"><i class="fa-brands fa-youtube youtube"></i></a>
+                                <a href="https://br.linkedin.com/company/pred-engenharia" target="_blank"><i class="fa-brands fa-linkedin linkedin"></i></a>
+                                <a href="https://www.facebook.com/PredEngenharia/?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook facebook"></i></a>
+                                <a href="https://www.instagram.com/predengenharia/?igshid=NTdlMDg3MTY=" target="_blank"><i class="fa-brands fa-instagram instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="login" >
+                            <span class="login_icone">
+                                <div class="overflow-hidden">
+                                    <div class=" text-centerl" @click="active = !active">
+                                     Login <i class="fa-solid fa-user-tie" ></i>
+                                    </div>
+                                
+                                    <v-bottom-navigation
+                                      v-model="value"
+                                      :input-value="active"
+                                      color="indigo"
+                                    >
+                                      <v-btn href="http://www.pred.com.br/salavip/manutencao/default.asp" target="_blank">
+                                        <span>Sala Vip</span>
+                                        <v-icon>mdi-history</v-icon>
+                                      </v-btn>
+                                
+                                      <v-btn href="http://www.pred.com.br/sgv/login/index.asp" target="_blank">
+                                       <span>Intranet</span> 
+                                       <v-icon>fas fa-lock</v-icon>
+                                      </v-btn>
+                                    </v-bottom-navigation>
+                                </div>
+                                
+                            </span>
+                        </div>
+                    </div>
+                    <section class="homebar">
+                        <div class="logo">
+                            <a href="index.html"><img src="Assets/image/logo.png" alt="logo"  class=""/></a>
+                        </div>
+                        <div class="details_pred">
+                            <div class="about">
+                                <a href="https://suporte.s3i.com.br/blog/sobre-nos/" class="item" target="_blank">SOBRE</a>
+                            </div>
+        
+                            <div class="services" onclick="scrollServicos()">
+                                <span class="item">
+                                    PRODUTOS E SERVIÇOS
+                                </span>
+                            </div>
+        
+                              <div class="conteudo">
+                                <a href="https://suporte.s3i.com.br/blog/" class="item" target="_blank">CONTEÚDO</a> 
+                              </div>
+
+                              <div class="demo " data-bs-toggle="modal">
+                                    <button type="button" class="button_agendar item services__buttom" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    AGENDAR DEMOSTRAÇÃO
+                                    </button>
+                                    
+                                    <div class="modal fade  " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal_bord">
+                                        <div class="modal-content">
+                                            <form action="https://formsubmit.co/yanick@pred.com.br" method="POST" class="modal_form">
+                                                <div class="modal_form_title">
+                                                    <div>
+                                                        <h6>Preencha os seus dados</h6>
+                                                        <p>Nossos especialistas entrarão em contato!</p>
+                                                    </div>
+                                                    <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal_form_inputs">
+                                                  <input type="text"  name="name"  placeholder="Escreva seu nome *" class="js_input" required minlength="2" oninput="habilitarPeloNome(this)">
+                                                  <input type="email" name="email"  placeholder="Escreva aqui o seu e-mail *"  class="js_input" required max="50" >
+                                                  <input type="tel" name="Telefone" id=""  placeholder="Telefone com DDD *" class="js_input" maxlength="12" onkeypress="Formatar('## #########', this)" oninput="habilitarPeloNumero(this)" required>
+                                                  <input type="tel" name="Celular" placeholder="Celular com DDD (Opcional)" class="js_input" maxlength="11" onkeypress="Formatar('## ########', this)">
+                                                  <input type="hidden" name="_next" value="https:http://127.0.0.1:5500/index.html">
+                                                  <input type="hidden" name="_subject" value="Solitação de Contato - Vindo do Site!!!">
+                                                  <input type="hidden" name="_next" value="http://127.0.0.1:5501/confirmacao.html">
+                                                  <input type="hidden" name="_cc" value="yanickeduardo04@outlook.com.br">
+                                                  <input type="hidden" name="_captcha" value="false">
+                                                  <input type="hidden" name="_template" value="table">
+                                                  <button type="submit" class="buttom_desabled">Solicitar Contato</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        </div>
+                                    </div>
+                              </div>
+                              <div class="Mobile">
+                                <div class="mobile-menu">
+                                  <div class="line1"></div>
+                                  <div class="line2"></div>
+                                  <div class="line3"></div>
+                                </div>
+
+                                <ul class="nav-list">
+                                  <li><a href="https://suporte.s3i.com.br/blog/sobre-nos/" class="item" target="_blank">SOBRE</a></li>
+                                  <li class="item" onclick="scrollServicos()">PRODUTOS E SERVIÇOS</li>
+                                  <li><a href="https://suporte.s3i.com.br/blog/" class="item" target="_blank">CONTEUDO</a></li>
+                                  <li><a href="#" class="item">CONTATOS</a></li>
+                                </ul>
+                              </div>
+
+                        </div>
+                    </section>
+    
+                
+                </div>
+                
+            </nav>
+            <div class="apresentation">
+                <div>
+                    <h1>PRED ENGENHARIA</h1>
+                    <h4>O SERVIÇO DE MANUTENÇÃO PREDITIVA QUE SUA EMPRESA MERECE!</h4>
+                </div>
+            </div>
+        </header>
+
+
+
+
+
+
+
+
+
+
+        <main>
+            <div class="container_main"  >
+
+                <div  class="produts_message" >
+                    <div class="img_produts" data-aos="fade-up" data-aos-duration="2000" >
+                        <img src="assets/image/A PRED ATUA NA INDÚSTRIA.png" alt="">
+                    </div>
+
+                    <div class="text_message">
+                        <div class="text_message_content">
+                            <div class="text_message_barra"></div>
+                            <p>A Pred Engenharia é uma provedora de soluções para gestão de ativos e processos com foco na garantia da segurança, confiabilidade e produtividade das atividades, atuando na indústria e área de serviços desde 1993. Suas inovadoras soluções são fornecidas ao mercado através de três área de negócios: Serviços Técnicos, Tecnologia de Informação e Automação Industrial.</p>
+                        </div>
+                        <a href="https://suporte.s3i.com.br/blog/sobre-nos/" class="buttom_plus">
+                            <button>SOBRE</button>
+                        <a>
+                    </div>
+                   
+                </div>
+
+
+
+                <div class="partnership_comments">
+
+                    <div class="text_services title_services">Conheça a PRED engenharia e seus sócios</div>
+                    <p>"O simples é o máximo da sofisticação. Se você quer uma coisa extremamente inovadora, faça
+                        o simples. Não simplista. O simples de forma estruturada e organizada." <br><span>OZÓRIO REZENDE (Diretor, Pred Engenharia)</span>
+                    </p>
+                    
+                    <section class="videos_container">
+                      <button aria-label="Anterior" class="video-prev" onclick="displayNone()"><i class="fa-solid fa-chevron-left"></i></button>
+                        
+                      <div class="cards_videos">
+
+                            <div class="card_video">
+                              <div class="body_true">
+                                <div class="card_video">
+                                  <video class="videos_pred empresa" controls>
+                                    <source src="assets/video/X2Download.app-Casos de Sucesso_ Pred e S3i.mp4">
+                                  </video> 
+                                  <img src="assets/image/SÓCIOS-PRED/Vinheta.gif" alt="Pred Video"  class="img_empresa"  >
+                                  <div class="ligar_desligar" id="0" onclick="playPause(id)"></div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card_video">
+                              <div class="body_true">
+                                 <div class="card_video">
+                                  <video class="videos_pred empresa" controls >
+                                    <source src="assets/video/X2Download.app-A PRED SOB UM NOVO OLHAR - Conheça os sócios - Ozório Rezende.mp4">
+                                  </video>
+                                  <img src="assets/image/SÓCIOS-PRED/OZORIO.gif" alt="Pred Video"  class="img_empresa">
+                                  <div class="ligar_desligar" id="1" onclick="playPause(id)"></div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card_video">
+                              <div class="body_true">
+                                <div class="card_video">
+                                  <video class="videos_pred empresa" controls  >
+                                    <source src="assets/video/X2Download.app-A PRED SOB UM NOVO OLHAR - Conheça os sócios - Edvan Guasti-(1080p).mp4">
+                                  </video> 
+                                  <img src="assets/image/SÓCIOS-PRED/EDVAN.gif" alt="Pred Video" class="img_empresa">
+                                  <div class="ligar_desligar" id="2" onclick="playPause(id)"></div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card_video">
+                              <div class="body_true">
+                                <div class="card_video">
+                                  <video class="videos_pred empresa" controls >
+                                    <source src="assets/video/X2Download.app-A PRED SOB UM NOVO OLHAR - Conheça os sócios - Felipe Ataíde-(1080p).mp4">
+                                  </video> 
+                                  <img src="assets/image/SÓCIOS-PRED/FELIPE.gif" alt="Pred Video"  class="img_empresa" >
+                                  <div class="ligar_desligar" id="3" onclick="playPause(id)"></div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card_video">
+                              <div class="body_true">
+                                <div class="card_video">
+                                  <video class="videos_pred empresa" controls >
+                                    <source src="assets/video/X2Download.app-A PRED SOB UM NOVO OLHAR - Conheça os sócios - Francisco Rezende-(1080p).mp4">
+                                  </video> 
+                                  <img src="assets/image/SÓCIOS-PRED/FRANCISCO.gif" alt="Pred Video"  class="img_empresa">
+                                  <div class="ligar_desligar" id="4" onclick="playPause(id)"></div>
+                                </div>
+                              </div>
+                            </div>
+
+                         </div>
+
+                        <button aria-label="Proximo" class="video-next" onclick="displayNone()"><i class="fa-solid fa-chevron-right"></i></button>
+                        <div role="tablist" class="videos_dots" onclick="displayNone()"></div>
+                    </section>
+                      
+                </div>
+                
+                
+
+
+
+
+
+
+
+    
+                <div class="all_produts" >
+
+                    <div class="container_all_produts">
+                        <div class="text_services title_services js_title_seevices">
+                           CONHEÇA AS NOSSAS SOLUÇÕES
+                        </div>
+
+                       <section class="main_services" data-aos-duration="2000" data-aos="fade-up">
+
+                        <div class="contain_services">
+                          <button aria-label="Previous" class="prev_services"><i class="fa-solid fa-angles-left"></i></button>
+                          
+                          <div class="glider_services">
+                            <div class="body_Services">
+                              <div class="body_main_services">
+                                <div class="services__">
+                                  <div class="title_services__">S3i - Sistema Inteligente de Intervenção Industrial</div>
+                                  <div class="main_info_services">
+                                    <div class="body_info_services">
+                                       <div class="child_services_text">
+                                          <div class="texts_services">
+                                            <h3>Uma solução de alto valor agregado deve ser mais do que um simples e-paper</h4>
+                                         
+                                            <p>Já imaginou otimizar o tempo nas inspeções com inteligência e intuitividade, e ainda aumentar sua produtividade com segurança, precisão das informações e com controle de desempenho e das atividades da equipe?
+
+                                             <br><br> O software S3i é uma ferramenta que adere às rotinas operacionais utilizando a mobilidade corporativa, garantindo rastreabilidade, inteligência e produtividade às atividades de inspeção, ensaio e auditoria.
+                                              
+                                             <span> Único no mercado que realiza auditoria da qualidade e efetividade de todos os tipos de inspeção em tempo real por meio de uma metodologia própria.</span>
+                                            </p>
+                                          </div>
+
+                                          <div class="texts_services">
+                                            <p class="title_services_child">Rastreabilidade e Inteligência para IBM Maximo, Infor, Oracle JDE, SAP e Totvs</p>
+                                            <p>
+                                              O S3i se destaca com a possibilidade de integrar a manutenção com todos os outros sistemas de informação utilizados nas empresas. Possui uma interface de fácil manuseio que permite o gerenciamento da manutenção preditiva e a transferência das informações obtidas nas inspeções para um banco de dados do ERP. Desse modo, elas são processadas, gerando novas informações que permitem a tomada de decisão sobre a necessidade ou não de reparo dos equipamentos inspecionados.
+
+                                             <br><br> Por se tratar de um sistema autônomo, o S3i, quando integrado aos sistemas de gestão utilizados pela empresa, permite um maior controle do cumprimento da atividade, tornando o sistema de gestão da manutenção adotado pelas empresas ainda mais robusto.
+                                            </p>
+                                          </div>
+                                          <div class="img_child_services">
+                                            <img src="http://pred.com.br/salavip/arquivos/repositorio4/images/SitePred/banner-1.jpg" alt="">
+                                          </div>
+                                          <div class="texts_services">
+                                            <p class="title_services_child">Exclusividades do Software S3i</p>
+                                            <ul>
+                                              <li> Operação rastreável e inteligente de inspeções com peculiaridades essenciais à gestão de ativos;</li>
+                                              <li> Utilização de código de barras, 2D ou RFID como posicionador do inspetor em relação às partes do Ativo a ser inspecionado;</li>
+                                              <li>Utilização de catálogos inteligentes para o registro e tratamento de anomalias (FMEA) em campo;</li>
+                                              <li>Utilização de ferramentas de controle de tempos e movimentos como forma de monitorar a qualidade das inspeções;</li>
+                                              <li> Utilização de reinspeções pós–reparo como forma de validar a eficácia das manutenções corretivas programadas;</li>
+                                              <li>Utilização de recurso que permite o registro, tratamento de falha e encerramento simultâneo de anomalias eliminadas no ato da detecção;</li>
+                                              <li>Avaliações sistêmica do risco de falha (Perigômetro) sobre cada anomalia, utilizando o conceito do GUT, permitindo assim filtrar as que de fato devem gerar Nota/Ordem no ERP/EAM</li>
+                                            </ul>
+                                          </div>
+                                          <div class="img_child_services img_last">
+                                            <img src="http://pred.com.br/salavip/arquivos/repositorio4/images/SitePred/resultados-s3i.jpg" alt="" >
+                                          </div>
+                                          <p class="p_btn_mci">Saiba mais sobre o S3i. <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Solicite-nos uma apresentação</button></p>
+                                       </div>
+
+                                       <div class="child_services_img">
+                                          <img src="assets/image/homemNovo.png" alt="">
+                                          <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="button_agendar item services__buttom btn_service_fixed">AGENDAR DEMOSTRAÇÃO</button>
+                                       </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                             <div class="body_Services">
+                              <div class="body_main_services">
+                                <div class="services__">
+                                  <div class="title_services__">SEM - Serviços de Engenharia de Manutenção</div>
+                                  <div class="main_info_services">
+                                    <div class="body_info_services">
+                                      <div class="child_services_text">
+                                        <div class="mci_services">
+                                          <h3>MCI</h3>
+                                          <p class="subtitle_mci">Obtenha todo o potencial na sua manutenção de forma simples e estruturada</p>
+                                          <div class="imgs_mci">
+                                            <div class="logo_mci">
+                                              <img src="assets/image/Serviços/mci/MP077 Rev 001 - Logomarca MCI.png" alt="">
+                                            </div>
+                                            <div class="mci_img">
+                                              <img src="assets/image/Serviços/mci/top-mci.png" alt="">
+                                            </div>
+                                            
+                                          </div>
+                                          <strong>Certifique-se que a RBM® (Rice &Beans Maintenance), está, de fato, implementada antes de investir tempo e energia na RCM® (Reliability Centered maintenance). A gente te explica como.</strong>
+                                          <div class="texts_services">
+                                            <p>Desenvolvido pela Pred Engenharia, o método MCI, trouxe uma perspectiva inovadora que, diferente de outros métodos existentes no mercado, promove a integração da cadeia de valores da Manutenção através de atribuições e entregáveis claramente definidos e auditáveis.</p>
+                                            <div class="mci_img">
+                                              <img src="assets/image/Serviços/mci/pdcaxsdca.jpg" class="mx_mci_img" alt="">
+                                            </div>
+                                            <p>No modelo MCI as manutenções preventiva sob condição e corretiva planejada são integradas de forma harmoniosa, em um ciclo fechado, e sustentada por uma ferramenta inteligente denominada PERIGÔMETRO ®. Essa ferramenta, desenvolvida pela Pred, faz a avaliação do que realmente deve entrar nas programações de manutenção, dando equilíbrio ao recurso. É nesse ciclo fechado que conseguimos garantir a disponibilidade e previsibilidade com o menor custo possível, pois se trabalha com a visão mínima de 4 semanas à frente (S+4).</p>
+                                            <div class="mci_img">
+                                              <img src="assets/image/Serviços/mci/fluxo-site-mci.png" class="" alt="">
+                                            </div>
+                                            <p>A frase que rege a metodologia MCI é “o simples é o máximo da sofisticação”. Isso porque todas as ações que sustentam o método são simples. No entanto, devido a sua doutrina estruturada e organizada, promove solidez e previsibilidade.</p>
+                                            <div class="banner_mci">
+                                              <img src="assets/image/Serviços/mci/banner-mci-predeng.jpg" alt="">
+                                            </div>
+                                            
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Solicite-nos uma apresentação</button>
+                                          </div>
+                                          
+                                         
+                                        </div>
+                                        <!--ERP-->
+                                        <div class="erp texts_services">
+                                          <h3>Sistematização da Manutenção</h3>
+                                          <p class="subtitle_mci">A sistematização racional da manutenção pode contribuir para a redução de 15 a 30% de seu custo fixo/variável</p>
+                                          <div class="mci_img">
+                                            <img src="assets/image/Serviços/erp/sistematizacao-manutencao-pred.jpg" class="" alt="">
+                                          </div>
+                                          <p>Depois da onda de implementações de sistemas de gestão integrada com ênfase no contábil, os chamados ERP (Enterprise Resource Planning), é hora da manutenção partir para uma nova forma de integrar seus ativos reduzindo custos e melhorando controles.</p>
+                                          <p>O problema ganha dimensões ainda maiores no caso de grandes indústrias que têm como ponto crítico os seus custos de manutenção. Reduzir essas despesas se torna prioridade à medida que os custos de manutenção de ativos representam de 20% a 40% do total de custos operacionais destas empresas alcançando, em todo o mundo, aproximadamente US$ 1 trilhão ao ano. A boa notícia é que esse valor pode (e deve), ser reduzido em cerca de um terço com a adoção de uma boa gestão dos ativos operacionais, que parte de uma implantação racional do sistema/módulo de gestão da manutenção.</p>
+                                          <p>Com a experiência de 20 anos nesta área, a Pred Engenharia apoia consultivamente no desenvolvimento e/ou na implementação de projetos envolvendo:</p>
+                                          <div class="erp_texts">
+                                            <img src="assets/image/Serviços/erp/Check_mark_23x20_02.png" alt=""><span>Cadastro de ativos (físicos e funcionais);</span><br><br>
+                                            <img src="assets/image/Serviços/erp/Check_mark_23x20_02.png" alt=""><span>Criação/revisão de Planos de manutenção com ênfase na inspeção e lubrificação;</span><br><br>
+                                            <img src="assets/image/Serviços/erp/Check_mark_23x20_02.png" alt=""><span>Computação móvel para operacionalização e gestão da manutenção, de forma que a solução não se limite a um simples e-paper. A partir da analise crítica dos requisitos do cliente a Pred Engenharia contribui na formatação do projeto, envolvendo definição da tecnologia de transmissão, definição de hardware, implementação de código de barras/2D/RFID e estratégia de integração com o SAP/PM, MAXIMO, MICROSIGA, dentre outros;</span><br><br>
+                                            <img src="assets/image/Serviços/erp/Check_mark_23x20_02.png" alt=""><span>Criação/revisão de Listas técnicas de sobressalentes e estratégia de estoque;</span><br><br>
+                                            <img src="assets/image/Serviços/erp/Check_mark_23x20_02.png" alt=""><span>Nivelamento racional do RH da manutenção através da contabilização de tempos e movimentos das equipes, e sua capacitação através das competências essenciais, utilizando metodologia própria. Neste processo a Pred Engenharia apoia o cliente na avaliação dos aspectos comportamentais/culturais, que não devem ser desconsiderados.</span>
+                                          </div>
+                                          <p>Caso a sua necessidade seja apoio na migração de ERP ou troca de versão do mesmo, a Pred Engenharia fornece o serviço de preparação dos dados mestres do legado para uma nova versão e/ou estrutura de dados.</p>
+                                          <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Solicite-nos uma apresentação</button>
+                                        </div>
+                                        <!--Lubrificante-->
+                                        <div class="lubrif texts_services">
+                                          <h3>Engenharia de Lubrificação</h3>
+                                          <p class="subtitle_mci">Pelo menos 50% das falhas em rolamentos e 60% dos problemas em redutores de engrenagens estão associadas à lubrificação.</p>
+                                          <p>A Pred Engenharia disponibiliza cinco serviços de engenharia essenciais à otimização técnica, gerencial e financeira dos seus processos de lubrificação de equipamentos. São eles:</p>
+                                          <div class="img_lubrif">
+                                            <img src="assets/image/Serviços/lubrificacao/lubrificacao-pred-port.jpg" alt="">
+                                          </div>
+                                          <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Solicite-nos uma apresentação</button>
+                                        </div>
+
+                                        <!--planejamento-->
+                                        <div class="planej texts_services">
+                                          <h3>Planejamento da Manutenção</h3>
+                                          <p class="subtitle_mci">O seu planejamento da manutenção foi feito em campo ou dentro de sala?</p>
+                                          <div class="img_planej">
+                                            <img src="assets/image/Serviços/planejamento/planejamento.jpg" alt="">
+                                          </div>
+                                          <p>É muito comum encontrar planos de manutenção que são cópias exatas dos manuais dos equipamentos. Esta prática é típica de planejamentos feitos dentro de sala, ou seja, sem levantamento em campo das peculiaridades das instalações. Quando isso ocorre, acredite, as execuções destes planos provavelmente estão sendo feitas dentro da oficina/escritório. Isso é denominado pela Pred Engenharia como Gestão do Autoengano, ou seja, alguém fez de conta que planejou e as equipes envolvidas estão fazendo de conta que executam.</p>
+                                          <p>A Pred Engenharia acredita que um bom plano de manutenção é aquele que é “cumprível”. Para tanto, precisa ser feito em campo e por profissionais experientes, seguindo procedimentos/diretrizes formalmente definidos no diagnóstico da manutenção, sobre as quatro linhas de planejamento acima ilustrado.</p>
+                                        
+                                        </div>
+
+                                        <div class="diagnost texts_services">
+                                          <h3>Diagnóstico da Manutenção</h3>
+                                          <p class="subtitle_mci">Um diagnóstico racional da sua manutenção fornecerá subsídios para decisões que poderão reduzir seus custos na ordem de 15 a 30%.</p>
+                                          <div class="img_planej">
+                                            <img src="assets/image/Serviços/planejamento/diagnostico3.png" alt="">
+                                          </div>
+                                          <p>A metodologia Pred Engenharia para a elaboração do diagnóstico da manutenção lhe permite cruzar informações de cinco fontes, e assim obter indicadores que determinarão as medidas necessárias para otimizar os resultados de sua manutenção.</p>
+                                          <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Solicite-nos uma apresentação</button>
+                                        </div>
+
+
+                                        <div class="capacitacao texts_services">
+                                          <h3>Capacitação de Equipes</h3>
+                                          <p class="subtitle_mci">A Pred Engenharia disponibiliza treinamentos abertos ou fechados às suas reais necessidades, sempre acompanhados de medição de eficiência e eficácia.</p>
+                                          <p>A Pred Engenharia é especialista em treinamentos de alto valor agregado. Através da FLIR, disponibiliza os Treinamentos nível 1 e 2 do ITC (Infrared Training Center), em ambientes abertos e também in company. Promove também treinamentos fechados, customizados e voltados à engenharia de aplicação de técnicas e práticas de planejamento e controle da manutenção/inspeção. São eles:</p>
+                                          <div class="erp_texts">
+                                            <img src="assets/image/Serviços/erp/Check_mark_23x20_02.png" alt=""><span>Planejamento e Controle da Manutenção – Partindo da RBM (Rice & Beans Maintenance) e chegando a RCM (Reliability Centered Maintenance).</span><br><br>
+                                            <img src="assets/image/Serviços/erp/Check_mark_23x20_02.png" alt=""><span>Aplicações avançadas da termografia em inspeções de instalações elétricas.</span><br><br>
+                                            <img src="assets/image/Serviços/erp/Check_mark_23x20_02.png" alt=""><span>Aplicações avançadas da termografia em inspeções de revestimentos estruturais (refratários).</span><br><br>
+                                            <img src="assets/image/Serviços/erp/Check_mark_23x20_02.png" alt=""><span>Aplicações avançadas da termografia em inspeções de equipamentos rotativos.</span><br><br>
+                                            <img src="assets/image/Serviços/erp/Check_mark_23x20_02.png" alt=""><span>Aplicações avançadas da termografia em inspeções de equipamentos estáticos.</span><br><br>
+                                            <img src="assets/image/Serviços/erp/Check_mark_23x20_02.png" alt=""><span>Aplicações avançadas da termografia em monitoramento de processos (automação).</span><br><br>
+                                            <img src="assets/image/Serviços/erp/Check_mark_23x20_02.png" alt=""><span>Capacitação de equipes de lubrificadores e gestores.</span><br><br>
+                                          </div>
+                                          <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Solicite-nos uma apresentação</button>
+                                        </div>
+
+                                        <div class="auditoria texts_services">
+                                          <h3>Auditoria da Manutenção</h3>
+                                          <p class="subtitle_mci">Confira, através de auditorias, se os planos e as rotinas de sua manutenção estão sendo de fato atualizados na linha do tempo.</p>
+                                          <div class="img_planej">
+                                            <img src="assets/image/Serviços/auditoria/pdca.jpg" alt="">
+                                          </div>
+                                          <p>O grande desafio dos gestores da manutenção é garantir que, os processos de análise crítica sobre as rotinas da manutenção, estejam acontecendo e que os resultados destes estejam sendo usados na otimização do plano de manutenção.</p>
+                                          <p>Com um programa regular de auditorias você terá como detectar a descontinuidade destes processos e tomar medidas para a regularização, antes que os mesmos reflitam na sua taxa de falhas/interrupções e/ou nos custos da manutenção.</p>
+                                          <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Solicite-nos uma apresentação</button>
+                                        </div>
+                                        
+                                       </div>
+
+                                       <div class="child_services_img">
+                                          <img src="assets/image/MISSAO1.PNG" alt="">
+                                          <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="button_agendar item services__buttom btn_service_fixed">AGENDAR DEMOSTRAÇÃO</button>
+                                       </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="body_Services">
+                              <div class="body_main_services">
+                                <div class="services__">
+                                  <div class="title_services__">SIT - Serviços Técnicos de Inspeção e Ensaios</div>
+                                  <div class="main_info_services">
+                                    <div class="body_info_services">
+                                      <div class="child_services_text">
+                                        <!--SIT-->
+                                        <div class="sit_termo texts_services">
+                                          <h3>Termografia</h3>
+                                          <p class="subtitle_mci">Evitar falhas e acidentes em instalações é tão simples quanto deixa-las ocorrer.</p>
+                                          <img src="assets/image/Serviços/sit/galeria4.jpg" alt="">
+                                          <p>
+                                            A termografia é uma técnica que permite mapear um corpo ou uma região com o objetivo de distinguir áreas de diferentes temperaturas, sendo, portanto uma técnica que permite a visualização artificial da luz dentro do espectro infravermelho.
+                                            <br><br>
+                                            A termografia tem um papel muito importante na área de manutenção preditiva. Através da sua utilização, é possível eliminar muitos problemas de produção, evitando falhas elétricas, mecânica e fadiga de materiais.
+                                            <br><br>
+                                            A Pred Engenharia atua no mercado de serviços e produtos ligados a Termografia Industrial desde 1993, operando em todos os estados do Brasil e em outros países. Neste segmento, desenvolvemos e utilizamos tecnologias de ponta para planejamento, inspeções, análises, cálculos, avaliações e gerenciamentos termográficos para as mais diversas aplicações industriais.
+                                            <br><br>
+                                            Como forma de prevenir acidentes e falhas técnicas, a norma técnica ABNT NBR 15763.2009 recomenda o uso da termografia infravermelha em sistemas elétricos em intervalos de seis meses.  Empresas seguradoras apreciam esta prática de inspeção em suas avaliações de risco e, em casos específicos, exigem laudos periódicos de termografia como forma de se evidenciar a boa condição técnica das instalações dos clientes.
+                                            <br><br>
+                                          </p>
+                                          <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Solicite-nos uma apresentação</button>
+                                        </div>
+
+                                        <div class="sit_vibra texts_services">
+                                          <h3>Análise de Vibração</h3>
+                                          <p class="subtitle_mci">Técnica que permite a detecção e diagnóstico precoce de anomalias em componentes móveis de equipamentos.</p>
+                                          <img src="assets/image/Serviços/sit/analise_vibra_site4.jpg" alt="" >
+                                          <p>
+                                            <br><br>
+                                            A Análise de Vibração é o processo pelo qual as falhas em componentes móveis de um equipamento são descobertas pela taxa de variação das forças dinâmicas geradas. Tais forças afetam o nível de vibração, que pode ser avaliado em pontos acessíveis das máquinas, sem interromper o funcionamento dos equipamentos.
+                                            A análise de vibração usa a condição operacional real do equipamento e está baseada no conhecimento do estado da máquina através de medições periódicas ou contínuas de um ou mais parâmetros significativos, evitando assim, paradas inesperadas e substituição de peças desnecessárias.
+                                            <br><br>
+                                          </p>
+                                          <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Solicite-nos uma apresentação</button>
+                                        </div>
+
+                                        <div class="sit_vibra texts_services">
+                                          <h3>Inspeção Sensitiva</h3>
+                                          <p class="subtitle_mci">Obtenha resultados de alto valor agregado integrando as inspeções sensitivas às preditivas.</p>
+                                          <img src="assets/image/Serviços/sit/setas_sensitiva4.png" alt="" class="sit_vibra_img_init">
+                                          <p>
+                                            <br><br>
+                                            Esta é a modalidade de inspeção que abrange praticamente todos os modos de falhas do equipamento ou instalação industrial. Apesar de se limitar normalmente ao uso dos sentidos naturais do inspetor, ela, na maioria das vezes é suficientemente capaz de detectar e diagnósticar anomalias em seus estágios mediano de degradação. Com  a utilização de computação móvel, as inspeções sensitivas executadas pela Pred Engenharia passam a ser inteligentes e altamente rastreáveis.
+                                            <br><br>
+                                          </p>
+                                          <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Solicite-nos uma apresentação</button>
+                                        </div>
+
+                                        
+                                        <div class="sit_vibra texts_services">
+                                          <h3>Análise de Óleo Isolante</h3>
+                                          <p class="subtitle_mci">Acompanhe de forma preditiva o ciclo de vida de equipamentos elétricos com isolamento a óleo.</p>
+                                          <img src="assets/image/Serviços/sit/setas_oleo1.png" alt="" class="sit_vibra_img_init">
+                                          <p>
+                                            <br><br>
+                                            Os equipamentos elétricos com isolamento a óleo, possuem em sua constituição um conjunto de materiais, dentre os quais citamos os dielétricos, que são em sua maioria, compostos orgânicos. Estes materiais quando submetidos à ação de defeitos e/ou falhas (térmicas e elétricas), se decompõe formando gases, combustíveis ou não. Os gases formados são total ou parcialmente dissolvidos no óleo, diluídos e transportados a todos os pontos por ele atingidos. Assim, as análises de óleo avaliam o estado de envelhecimento, características de desempenho e contaminação do óleo isolante. Para a elaboração do diagnóstico analítico, avalia os óleos isolantes, através da verificação de diferentes propriedades, atraves das técnicas de:
+                                            <br><br>
+
+                                          </p>
+                                          <ul>
+                                            <li> Análise físico-química de rotina</li>
+                                            <li>Análise de gases disolvidos por cromatografia de fases gasosas</li>
+                                            <li>Teor de PCB</li>
+                                            <li>Grau de polimerização</li>
+                                            <li> Furfuraldeído e Passivadores</li>
+                                            <li>Enxofre corrosivo</li>
+                                            <li> Microscopia Eletrônica de Varredura (MEV)</li>
+                                            <li> Estabilidade à oxidação</li>
+                                            <li>Carbonilados</li>
+                                            <li>Óleo vegetal</li>
+                                            <li>Silicone e R-Temp</li>
+                                            <li>Compatibilidade</li>
+                                            <li>Contagem de partículas</li>
+                                            <li>ANP</li>
+                                          </ul>
+                                          <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Solicite-nos uma apresentação</button>
+                                        </div>
+
+                                        <div class="sit_vibra texts_services">
+                                          <h3>Inspeção por Ultrassom</h3>
+                                          <p class="subtitle_mci">Possibilita a detecção e análise de defeitos mecânicos em máquinas de baixa rotação, instalações elétricas, vazamentos de fluidos gasosos, dentre outros.</p>
+                                          <img src="assets/image/Serviços/sit/setas_ultrassom.png" alt="" class="sit_vibra_img_init">
+                                          <p>
+                                            <br><br>
+                                            A inspeção por ultrassom detecta sons produzidos por operações mecânicas, emissões elétricas e fluxo de fluidos. A detecção por ultrassom permite encontrar falhas em praticamente todos os equipamentos existentes e em instalações industriais.
+                                            <br><br>
+                                          </p>
+                                          <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Solicite-nos uma apresentação</button>
+                                        </div>
+
+                                        <div class="sit_vibra texts_services">
+                                          <h3>Inspeção em Bancos de Baterias</h3>
+                                          <p class="subtitle_mci">Garanta que seus sistemas de fornecimento de energia de emergência (UPS) estejam em perfeitas condições de uso.</p>
+                                          <img src="assets/image/Serviços/sit/setas_baterias.jpg" alt="" class="sit_vibra_img_init">
+                                          <p>
+                                            <br><br>
+                                            As atividades de manutenção preventiva e preditivas em bancos de baterias executadas pela Pred Engenharia visam detectar e eliminar falhas ocultas, e são determinadas por normas técnica, que contemplam as seguintes atividades:
+                                            <br><br>
+
+                                          </p>
+                                          <ul>
+                                            <li>Inspeção visual.</li>
+                                            <li>Inspeção visual interna.</li>
+                                            <li>Análise físico química do eletrólito.</li>
+                                            <li>Inspeção dimensional.</li>
+                                            <li>Ensaio de estanqueidade.</li>
+                                            <li>Capacidade, em ampère-hora, nas condições nominais.
+                                            </li>
+                                            <li>Aptidão à flutuação/reserva de eletrólito.</li>
+                                            <li>Capacidade, em ampère-hora, para regime diferente do normal.</li>
+                                            <li>Queda de tensão nas interligações.</li>
+                                            <li>Retenção de carga (autodescarga).</li>
+                                            <li>Durabilidade a ciclos de descarga.</li>
+                                            <li>Resistência interna e corrente de curto circuito.</li>
+                                            <li>Durabilidade a sobrecarga com tensão de flutuação e temperatura elevadas.</li>
+                                            <li>Análise físico-química dos materiais.</li>
+                                            <li>Eficiência de recarga.</li>
+                                            <li>Identificação dos materiais poliméricos.</li>
+                                            <li>Revelação de tensões residuais de moldagem dos vasos.</li>
+                                            <li>Ensaio de inflamabilidade.</li>
+                                            <li>Perda de capacidade após ensaio mecânico.</li>
+                                            <li>Ensaio de ciclagem térmica.</li>
+                                          </ul>
+                                          <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Solicite-nos uma apresentação</button>
+                                        </div>
+                             
+                                       </div>
+
+                                       <div class="child_services_img">
+                                          <img src="assets/image/ENGENHEIRA INFORMATIVOS.png" alt="">
+                                          <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="button_agendar item services__buttom btn_service_fixed">AGENDAR DEMOSTRAÇÃO</button>
+                                       </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="body_Services">
+                              <div class="body_main_services">
+                                <div class="services__">
+                                  <div class="title_services__">SFT - Sistema Fixo de Termografia</div>
+                                  <div class="main_info_services">
+                                    <div class="body_info_services">
+                                      <div class="child_services_text">
+                                    <!--Termografia-->
+                                    <div class="termog texts_services">
+                                      <h3>Uma solução da Pred acompanhada de engenharia de aplicação e ferramentas específicas</h3>
+                                      <p class="subtitle_mci">SISTEMA FIXO POR TERMOGRAFIA</p>
+                                      <div class="termo__">
+                                        <div class="termo_display_init">
+                                          <p class="termo_span_init">Na indústria, muitas anormalidades ou acidentes operacionais poderiam ser facilmente evitados ou amenizado os seus impactos, se as operações fossem visualizadas em tempo real e integral. Inconvenientes como baixa luminosidade, mal tempo e condições operacionais adversas, dificultam a visualização das operações e consequentemente ampliam a probabilidade da ocorrência de um acidente ou da perda do controle de um processo.</p>
+                                          <img src="assets/image/Serviços/termografia/acidente-transformador.png" alt="" id="img_termo_init">
+                                          <img src="assets/image/Serviços/termografia/camera-pred.png" alt="" id="img_termo_second">
+                                          <p class="termo_span_second">A termografia por infravermelho é o método mais confiável e preciso no acompanhamento contínuo de operações onde a temperatura é uma das</p>
+                                          <p class="termo_span_">variáveis do processo. As câmeras termográficas utilizadas pela Pred Engenharia, possuem lentes com zoom contínuo oferecendo uma solução singular de rastreamento e medição de temperaturas em diferentes distancias. A lente de zoom é totalmente controlada por software especialista. Os sistemas fixos de termografia (SFT), fornecidos pela Pred Engenharia, são customizados para atender as mais diversas aplicações de análises e avaliações sistêmicas de irregularidades quantitativas e/ou qualitativas.</p>
+                                          <p class="termo_span_end">Sua aplicação se faz presente em processos relacionados à visão de apoio e em controle de processos.</p>
+                                        </div>
+
+                                        <div class="termo_display_end">
+                                          <div>
+                                            <p class="termo_text_display_init">Na indústria, muitas anormalidades ou acidentes operacionais poderiam ser facilmente evitados ou amenizado os seus impactos, se as operações fossem visualizadas em tempo real e integral. Inconvenientes como baixa luminosidade, mal tempo e condições operacionais adversas, dificultam a visualização das operações e consequentemente ampliam a probabilidade da ocorrência de um acidente ou da perda do controle de um processo.</p>
+                                            <img src="assets/image/Serviços/termografia/acidente-transformador.png" alt="" id="img_termo_display_init">
+                                          </div>
+
+                                          <div>
+                                            <img src="assets/image/Serviços/termografia/camera-pred.png" alt="" id="img_termo_display_end">
+                                            <p class="termo_text_display_end">A termografia por infravermelho é o método mais confiável e preciso no acompanhamento contínuo de operações onde a temperatura é uma das variáveis do processo. As câmeras termográficas utilizadas pela Pred Engenharia, possuem lentes com zoom contínuo oferecendo uma solução singular de rastreamento e medição de temperaturas em diferentes distancias. A lente de zoom é totalmente controlada por software especialista. Os sistemas fixos de termografia (SFT), fornecidos pela Pred Engenharia, são customizados para atender as mais diversas aplicações de análises e avaliações sistêmicas de irregularidades quantitativas e/ou qualitativas. Sua aplicação se faz presente em processos relacionados à visão de apoio e em controle de processos.</p>
+                                          </div>
+                                        </div>
+                                        
+                                        
+                                        <div class="termo_text_img">
+                                          <img src="assets/image/Serviços/termografia/termografia-chamine.jpg" alt="">
+                                          <div>
+                                            <p>Visão de Apoio</p>
+                                            <p>Com ênfase na segurança operacional em equipamentos e processos, esse tipo de aplicação, classificada de baixo custo e de alto valor agregado, é essencialmente qualitativa (distribuição térmica) e possibilita supervisão em tempo real e integral.</p>
+                                          </div>
+                                        </div>
+
+                                        <div class="termo_text_img">
+                                          <img src="assets/image/Serviços/termografia/pred-termografia-laminados.jpg" alt="">
+                                          <div>
+                                            <p>Controle de Processos</p>
+                                            <p>A termografia aplicada a controle de processos visa assegurar qualidade, produtividade e/ou segurança. As aplicações são qualitativas e também quantitativas em operações em tempo real e integral.</p>
+                                          </div>
+                                        </div>
+
+                                        <div class="termo_end-text">
+                                          <div>
+                                            <p>As soluções da Pred, aplicadas a controle de processos são sempre acompanhadas de engenharia de aplicação e ferramentas específicas. O Portal SFT é uma dessas ferramentas. É um sistema inteligente para a supervisão e monitoração de tendências termográficas de equipamentos e processos nas mais diversas aplicações industriais. O Portal SFT é totalmente configurável e apto a trabalhar em nuvem.
+
+                                              A termografia por infravermelho é o método mais confiável e preciso no acompanhamento contínuo de operações em locais com condições adversas para visualização.</p>
+                                              <p>
+                                                Conheça mais as nossas aplicações para visão de apoio e controle de processos por termografia!
+                                              </p>
+                                              <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Solicite-nos uma apresentação</button>
+                                          </div>
+
+                                          <img src="assets/image/Serviços/termografia/pred-termografia-portal.jpg" alt="">
+
+                                        </div>
+                                      
+                                      
+                                      </div>
+                                     
+                                    </div>
+                                       </div>
+
+                                       <div class="child_services_img termo_img_fixed">
+                                          <img src="assets/image/Camada-2-727x1024.png" alt="">
+                                          <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="button_agendar item services__buttom btn_service_fixed">AGENDAR DEMOSTRAÇÃO</button>
+                                       </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      
+                          <button aria-label="Next" class="next_services"><i class="fa-solid fa-angles-right"></i></button>
+                          <div role="tablist" class="dots_services"></div>
+                        </div>
+
+                       </section>
+
+                    </div>
+        
+                </div>
+                
+
+                <!--MISSÃO E HISTORIA-->
+                <div class="depositions">
+
+                    <div class="depositions_vision"  >
+                        <div class="title_vision text_services title_services">Missão da PRED ENGENHARIA</div>
+                        <div class="text_vision">Nossa missão é questionar e aperfeiçoar o que <span>"aparentemente é óbvio"</span>, no ciclo de vida de ativos físicos e funcionais.</div>
+                    </div>
+
+
+                    <div class="depositions_coment" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="depositions_coment_text">
+                            <div id="carouselhistorypred" class="carousel slide">
+                                <div class="carousel-inner inner_history">
+                                  <div class="carousel-item active">
+                                    <img src="assets/image/HISTORIAS/1.png" class="d-block w-100" alt="HISTORIAS">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/image/HISTORIAS/1993.png" class="d-block w-100" alt="HISTORIAS">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/image/HISTORIAS/1996.png" class="d-block w-100" alt="HISTORIAS">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/image/HISTORIAS/2002.png" class="d-block w-100" alt="HISTORIAS">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/image/HISTORIAS/2006.png" class="d-block w-100" alt="HISTORIAS">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/image/HISTORIAS/2018.png" class="d-block w-100" alt="HISTORIAS">
+                                  </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselhistorypred" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselhistorypred" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+              
+            </div><!--fim container-->
+          
+        </main>
+
+
+
+
+
+        <footer >
+
+            <div class="parceria">
+                <div class="text_services title_services">NOSSOS PARCEIROS</div>
+
+                <div class="carroussel__contain">
+
+                    <button aria-label="Anterior" class="carroussel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+
+                    <div class="carroussel_parceria">
+                        <div class="item_parceria">
+                          <div class="card_parceria">
+                            <div class="img_parceria">
+                              <img src="http://pred.com.br/imagens/mei-pred.gif" alt="">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item_parceria">
+                          <div class="card_parceria">
+                            <div class="img_parceria">
+                              <img src="http://pred.com.br/imagens/zebra-technologies-pred.gif" alt="">
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="item_parceria">
+                          <div class="card_parceria">
+                            <div class="img_parceria">
+                              <img src="http://pred.com.br/imagens/automation-technology.gif" alt="">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item_parceria">
+                          <div class="card_parceria">
+                            <div class="img_parceria">
+                              <img src="http://pred.com.br/imagens/sebrae-pred.gif" alt="">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item_parceria">
+                          <div class="card_parceria">
+                            <div class="img_parceria">
+                              <img src="http://pred.com.br/imagens/acacci.gif" alt="">
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <button aria-label="Proximo" class="carroussel-next"><i class="fa-solid fa-chevron-right"></i></button>
+                    <div role="tablist" class="carroussel_dots"></div>
+
+                  </div>
+
+
+
+                </div>
+                
+            </div>
+
+            <div class="footer_form">
+                <form action="https://formsubmit.co/yanick@pred.com.br" method="POST">
+                    <h2>Insira seus dados no formulário abaixo para agendar a sua demonstração.</h2>
+                    <input type="text" name="name" class="js_input js-form_input"  placeholder="Escreva seu nome *"  required minlength="2" oninput="habilitarPeloNomeform(this)" >
+                    <input type="email" name="email" class="js_input js-form_input"  placeholder="Escreva aqui o seu e-mail *" required maxlength="50">
+                    <input type="tel" name="Telefone" class="js_input js-form_input" id=""  placeholder="Telefone com DDD *" maxlength="12" minlength="12" onkeypress="Formatar('## #########', this)" oninput="habilitarPeloNumeroform(this)" required >
+                    <input type="tel" name="Celular" class="js_input js-form_input" placeholder="Celular com DDD (Opcional)" maxlength="11" onkeypress="Formatar('## ########', this)" >
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5501/confirmacao.html">
+                    <input type="hidden" name="_subject" value="TESTANDO O ENVIOO DE EMAIL!">
+                    <input type="hidden" name="_cc" value="yanickeduardo04@outlook.com">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <button type="submit" class="buttom_desabled">Solicitar Contato</button>
+                </form>
+
+                <div class="footer_img">
+                    <div class="img_footer_">
+                        <img src="assets/image/FORMULARIO.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer_img_local">
+
+                <div class="email_adress">
+
+                  <div class="email">
+                      <div class="icone_email"><i class="fa-sharp fa-solid fa-envelope"></i></div>
+                      <div class="text_email">
+                        <h2>E-MAIL</h2>
+                        <P>contato@pred.com.br</P>
+                      </div>
+                  </div>
+
+                  <div class="adress">
+                      <div class="icone_adress"><i class="fa-solid fa-map-location-dot"></i></div>
+                      <div class="text_adress">
+                        <h2>ENDEREÇO</h2>
+                        <P>R. Italina Pereira Mota, 440 - Jardim Camburi, Vitória - ES, 29090-370</P>
+                      </div>
+                  </div>
+
+                  <div class="contatts">
+                    <h2>FALE CONOSCO</h2>
+                    <hr>
+                    <div class="text_cel">
+                      <div class="icone_celular"><i class="fa-solid fa-phone"></i></div>
+                      <P>+55 27 <span class="span"> 3337-5977</span></P>
+                    </div>  
+                  </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer_end">
+                <div class="end_bottom">
+                    <div class="year_end">{{ new Date().getFullYear() }} — <strong>PRED ENGENHARIA</strong> © Todos os direitos Reservados</div>
+                </div>
+            </div>
+        </footer>
+
+    </section>
+    
+    <script src="src/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.js"></script>
+    
+   
+    <script src="src/js/scriptvue.js"></script>
+    <script>AOS.init();</script>
+
+    <script src="src/js/extra.js"></script>
+</body>
+</html>
+
+
+
+
+
+
