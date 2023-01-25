@@ -2773,19 +2773,16 @@ footer{
         display: none;
     }
     .networks_fixed{
-        position: fixed;
         display: block;
-        bottom: 0;
-        right: 0;
-        z-index: 100000000000000;
-        width: auto;
-        height: 200px;
+        width: 100%;
+        margin: auto;
+        padding: 0;
+
     }
     .container_network_fixed{
         display:flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 90%;
+        justify-content: space-between;
+        width: 50%;
     }
 
 
@@ -2908,6 +2905,10 @@ footer{
     .p_btn_mci{
         text-align: left;
     }
+    .container_network_fixed{
+        width: 60%;
+    }
+
     
 }
 
@@ -3008,7 +3009,9 @@ footer{
         overflow-x: scroll;
     }
 
-   
+    .container_network_fixed{
+        width: 70%;
+    }
 
     .services__{
         margin-right: 20px;
@@ -3162,6 +3165,10 @@ footer{
   .nav-list{
     width: 140vw;
     }
+    .container_network_fixed{
+        width: 80%;
+    }
+
 
 
     
@@ -3259,6 +3266,10 @@ footer{
     .services__buttom{
         display: none;
      }
+     .container_network_fixed{
+        width: 90%;
+    }
+
 }
 
 
