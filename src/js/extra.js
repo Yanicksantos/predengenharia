@@ -306,7 +306,3 @@ window.gtranslateSettings = {"default_language":"pt","languages":["pt","fr","en"
 document.querySelector('.banner_mci').addEventListener('click', () => {
     window.location.href='https://www.youtube.com/playlist?list=PLA8tyKb1AjYCrcGFOOtj0GiE_o5Q4Rpdk'
 })
-
-document.querySelector('.js_logo').addEventListener('click', () => {
-    window.location.href='../../index.html'
-})
