@@ -1453,6 +1453,7 @@ footer{
 
 
 /*Para telas menores que 1400px de largura*/
+
 @media screen and (max-width: 1400px) {
     .mycontainer{
         width: 100%;
@@ -1470,6 +1471,8 @@ footer{
     }
 
 }
+
+
 
 @media screen and (max-width: 1270px){
     header{
@@ -2681,6 +2684,10 @@ footer{
   .whatsaap_fixed{
     left: 5px;
   }
+  .btn_nav{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
   .main_info_services{
  
     width: 100%;
@@ -2791,6 +2798,10 @@ footer{
         padding: 5px;
        
     }
+    .btn_nav{
+        padding-top: 0;
+        padding-bottom: 0;
+      }
     .Mobile{
         margin-left: 30px;
     }
@@ -3079,6 +3090,10 @@ footer{
         margin-left: 10px;
         margin-right: 40px;
     }
+    .nav-list{
+        width: 150vw; 
+    }
+
 
     .btn_nav{
         font-size: 10px;
@@ -3167,11 +3182,14 @@ footer{
 
 
 
-@media screen and (max-width: 405px){
+@media screen and (max-width: 406px){
    
    
     .services-contain{
         height: 850px;
+    }
+    .nav-list{
+        width: 160vw; 
     }
 
 
@@ -3186,6 +3204,7 @@ footer{
         margin-left: 10px;
         margin-right: 20px;
     }
+  
 
     .btn_nav{
         font-size: 10px;
@@ -3208,7 +3227,7 @@ footer{
     margin-top: 30px;
   }
   .nav-list{
-    width: 140vw;
+    width: 170vw;
     }
     .container_network_fixed{
         width: 80%;
@@ -3232,9 +3251,7 @@ footer{
         margin-left: 10px;
 
     }
-    .nav-list{
-        width: 160vw;
-    }
+  
     .modal_form_title h6{
         font-size: medium;
     }
@@ -3315,6 +3332,9 @@ footer{
     .title_services__{
         font-size: x-small;
     }
+    .nav-list{
+        width: 195vw;
+    }
 }
 
 
@@ -3329,13 +3349,21 @@ footer{
 
 }
 
+@media screen and (max-width: 280px){
+    .nav-list{
+        width: 210vw;
+    }
+}
 
 @media screen and (max-width: 264px){
     .contatts{
         display: none;
     }
+    .nav-list{
+        width: 220vw;
+    }
 }
-@media all and (orientation: landscape) and(max-width: 700px){
+@media all and(max-width: 700px){
 	
     
     header{
@@ -3421,3 +3449,53 @@ footer{
     }
  
 }
+
+
+@media all and (orientation:landscape) and(max-width: 700px){
+    header{
+        background-color: #000;
+        height: 400px;
+        display: block;
+        position: static;
+    }
+    nav{
+        
+       height: 150px !important;
+    }
+
+    .network_login{
+        height: 30px !important;
+    }
+
+    .language{
+        display: none;
+    }
+
+    .apresentation{
+        margin: 0;
+        padding: 0;
+
+    }
+    .apresentation div{
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .apresentation h1{
+        margin: 0;
+        padding: 0;
+    }
+
+    .apresentation h4{
+        font-size: small;
+        margin: 0;
+        padding: 0;
+    }
+
+
+}
+
