@@ -88,56 +88,52 @@ a:hover{
 }
 
 
+
+
 header{
-    width: 100%;
-    max-height: 100vh;   
+    max-height: 800px;
+    max-width: 1450px;
+    background-color: #737373;
 }
 
 nav{
-    position: relative;
-    height: 30vh;
     width: 100%;
+    height: 200px;
     background-color: #fff;
     padding: 0 70px 10px 70px;
- 
-
-}   
-
-
-
+   
+}
 
 .network_login{
-    height: 7vh;
+    height:50px;
     display: flex;
     justify-content: end;
     align-items: center;
-    padding: 0 75px 0 95px;
+    padding: 0 60px 0 95px;
     padding-top: 10px;
     background-color: #fff;
 }
+
 .network{
     display: flex;
     color: green;
 }
-
 .network a{
     text-decoration: none;
     color: #fff;
 }
-
 .network i{
     margin-right: 10px;
 }
+
 
 .network  i:hover{
     text-shadow: 1px 1px 2px #000000;
 }
 
-
 .language{
     display: flex;
     min-width: 150px;
-    height: 5vh;
     justify-content: space-around;
     align-items: center;
     margin-right: 100px;
@@ -145,7 +141,7 @@ nav{
 
 .language img{
     width: 24px;
-    height: 3vh;
+    height: 24px;
     transition: ease-in-out .2s;
 }
 
@@ -163,6 +159,8 @@ nav{
     background-color: red;
     margin: 0 7px;
 }
+
+
 
 .youtube{
     color: red;
@@ -195,10 +193,10 @@ nav{
     margin-left: 50px;
     color: #fff;
     height: 70%;
-   
 }
 
 .login_text{margin-right: 5px;}
+
 .text-centerl{
     color: #2D348E;
     width: 65%;
@@ -208,7 +206,7 @@ nav{
  .login i{
     color: #2D348E;
     font-size: large;
-    margin-left: 5px;
+    
  }
 
 .login_icone:hover{
@@ -219,37 +217,27 @@ nav{
 
 
 
-
-
-
-
-
-
-
-
-
 /*PARTE PRINCIPAL DA NAVER*/
-
 .homebar{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 50px;
-    margin-top: 15px;
+    align-items: center;
+    height: 150px;
+    padding: 20px 0;
+
    
 
-}
- 
-.logo{
-    margin-right: 10px;
 }
 
 .logo img{
     max-width: 350px;
     height: 100px;
 }
+
+
+
+
 
 .logo:hover{
     cursor: pointer;
@@ -263,7 +251,6 @@ nav{
     font-size: smaller;
     color: #2D348E;
 }
-
 
 .item{
     text-decoration: none;
@@ -404,20 +391,13 @@ nav{
     cursor: pointer;
 }
   
-  .mobile-menu div {
+.mobile-menu div {
     width: 32px;
     height: 2px;
     background: #fff;
     margin: 8px;
     transition: 0.3s;
-  }
-
-
-
-
-
-
-
+}
 
 
 
@@ -428,15 +408,12 @@ nav{
 
 
 /*PARTE PRINCIPAL DO HEADER*/
-
 .apresentation{
-    max-width: 1450px;
-    height: 80vh;
-    background-color: #000;
+    width: 100%;
+    height: 600px;
     background-image: url('../../assets/image/fundo/bannnerPrincipal.gif');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -448,6 +425,7 @@ nav{
     color: #fff;
     text-align: center;
 }
+
 
 .apresentation h1{
     font-size: 90px;
@@ -462,9 +440,6 @@ nav{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   
 }
-
-
-
 
 
 /*INICIANDO A MAIN*/
@@ -1452,37 +1427,10 @@ footer{
 /*Fazendo a responsividade*/
 
 
-/*Para telas menores que 1400px de largura*/
-
-@media screen and (max-width: 1400px) {
-    .mycontainer{
-        width: 100%;
-    }
-    nav{
-        height: 30vh;
-    }
-    .apresentation{
-        height: 70vh;
-        background-size: cover;
-        background-position: center;
-    }
-    header{
-        height: 100vh;
-    }
-
-}
 
 
 
 @media screen and (max-width: 1270px){
-    header{
-        height:100vh;
-    }
-    .apresentation{
-        height: 70vh;
-        background-size: cover;
-        background-position: center;
-    }
     .img_produts{
         position: relative;
         max-width: 350px;
@@ -1573,15 +1521,6 @@ footer{
 
 /*Telas menores que 1170px*/
 @media screen and (max-width:1175px){
-    header{
-        height: 90vh;
-    }
-    .apresentation{
-        height: 65vh;
-        background-size: cover;
-        background-position: center;
-    }
-
     .img_produts img{
         position: absolute;
         top: -30px;
@@ -1837,33 +1776,30 @@ footer{
 
 /*Para telas menores que 1120px de largura*/
 @media all and (max-width:1075px) and (max-width: 1025px) {
-    
-
-    nav{
-        padding: 0 20px;
-        height: 30vh;
-    }
-
-    .network_login{
-        padding: 0 0;
-        padding-top: 10px;
-    }
 
     .login{
-        margin: 0;
+        padding: 0;
     }
+    .details_pred{
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+       
+    }
+   
     .homebar{
         padding: 0;
-        padding-top: 20px;
+        justify-content: space-between;
+        margin: 0;
+    }
+    
+
+    .demo button{
+        margin: 0;
     }
 
 
-    .control_nav{
-        width: 100%;
-        height: 30vh;
-        padding: 0;
-    }
-
+    
    
 
     .apresentation h1{
@@ -2047,14 +1983,16 @@ footer{
 
 /*Para telas menores que 950px de largura*/
 @media screen and (max-width: 995px) {
-    
-    header{
-        height: 90vh;
+    .login{
+        padding: 0;
+        margin: 0;
+        margin-right: 40px;
     }
-    .apresentation{
-        height: 60vh;
-        background-size: cover;
-        background-position: center;
+    .network{
+        margin: 0;
+    }
+    .language{
+        margin: 0;
     }
     .text_message_content{
         width: 95%;
@@ -2114,15 +2052,9 @@ footer{
 
 @media screen and (max-width: 965px){
     /*Desligar a primeira imagem do leyout*/
-    header{
-        height: 87vh;
+    nav{
+        padding: 0;
     }
-    .apresentation{
-        height: 57vh;
-        background-size: cover;
-        background-position: center;
-    }
-
     .produts_img{
         display: none;
     }
@@ -2173,47 +2105,9 @@ footer{
 
 
 
-@media screen and (max-width: 940px){
- 
 
-    .text_message_barra{
-        height: 300px;
-    }
-    .apresentation h1{
-        width: 70%;
-        margin: auto;
-    }
-    .apresentation div{
-        height: 100%;
-        padding-top: 30px;
-        text-align: center;
-    }
-}
 
 @media screen and (max-width: 905px){
-    header{
-        height: 85vh;
-    }
-    .apresentation{
-        height: 55vh;
-        background-size: cover;
-        background-position: center;
-    }
-    .apresentation div{
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        
-    }
-    .apresentation h1{
-        margin: 10px;
-        font-size: 70px;
-    }
-    .apresentation h4{
-        font-size: large;
-    }
 
     .img_produts{
         display: none;
@@ -2236,14 +2130,7 @@ footer{
 }
 
 @media screen and (max-width: 895px){
-    .apresentation div{
-        padding: 0;
-        width: 100%;
-    }
-
-    .apresentation h4{
-        font-size: 16px;
-    }
+   
     .child_services_text{
         padding-right: 0;
     }
@@ -2280,80 +2167,8 @@ footer{
 
 
 @media screen and (max-width: 854px){
-    header{
-        width: 100%;
-        height: 100vh;   
-    }
-    .main_whatsapp span{
-        display: none;
-    }
-    .apresentation{
-        height: 75vh;
-        background-size: cover;
-        background-position: center;
-    }
-    .apresentation div{
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        
-    }
-    .apresentation h1{
-        margin: 10px;
-        font-size: 70px;
-    }
-    .apresentation h4{
-        font-size: large;
-    }
-    .network_login{
-        height: 7vh;
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        padding: 0 50px;
-        padding-top: 10px;
-        background-color: #fff;
-    }
-
-
-
-    .language{
-        display: flex;
-        width: 100px;
-        height: 5vh;
-        justify-content: space-around;
-        align-items: center;
-        margin-right: 50px;
-    }
-
-
-
-    .login{
-        margin-left: 30px;
-        color: #fff;
-        height: 70%;
-    }
-
-    .login_text{margin-right: 5px;}
-    .text-centerl{
-        color: #2D348E;
-        width: 65%;
-        margin: auto;
-    }
-
-    .login i{
-        color: #2D348E;
-        font-size: large;
-        margin-left: 5px;
-    }
-
-    .login_icone:hover{
-        cursor: pointer;
-        color: red;
-    }
-
+  
+   
     .Mobile{
         position: relative;
         display: block;
@@ -2427,8 +2242,6 @@ footer{
         object-fit: 100%;
         background-position: center;
     }
-
-
     
  
 }
@@ -2475,15 +2288,9 @@ footer{
 
 
 @media screen and (max-width: 768px){
-    header{
-        height: 100vh;
-    }
 
-    .apresentation{
-        background-size: cover;
-        background-position: center;
-        height: 70vh;
-    }
+
+    
 
     .apresentation div{
         display: flex;
@@ -2561,9 +2368,6 @@ footer{
         width: 200px;
     }
 
-    .apresentation{
-        background-size: cover;
-    }  
 }
 
 
@@ -2578,9 +2382,7 @@ footer{
         padding-right: 20px;
     }
 
-    .apresentation{
-        background-size: cover;
-    }
+    
     .produts_main{
         display: none;
     }
@@ -2592,17 +2394,19 @@ footer{
 
 
 
-@media screen and (max-width: 709px){
 
-    .apresentation h4{
-        width: 70%;
-        font-size: large;
-    }
-  
-}
 
 
 @media screen and (max-width: 680px){
+    .network_login{
+        padding: 0;
+    }
+    .login{
+        margin: 0;
+        padding: 0;
+    }
+
+
     .mci_img{
         height: 250px;
     }
@@ -2684,12 +2488,12 @@ footer{
   .whatsaap_fixed{
     left: 5px;
   }
-  .btn_nav{
-    padding-top: 0;
-    padding-bottom: 0;
+
+  .main_whatsapp{
+    display: none;
   }
+
   .main_info_services{
- 
     width: 100%;
     padding: 0;
   }
@@ -2776,7 +2580,7 @@ footer{
 
 
 @media screen and (max-width: 594px){
-    .network{
+   .network{
         display: none;
     }
     .networks_fixed{
@@ -2798,10 +2602,7 @@ footer{
         padding: 5px;
        
     }
-    .btn_nav{
-        padding-top: 0;
-        padding-bottom: 0;
-      }
+ 
     .Mobile{
         margin-left: 30px;
     }
@@ -2967,12 +2768,19 @@ footer{
     .buttom_plus{
         margin-top: 10px;
     }  
-    .btn_nav{
-        font-size: 10px;
-        padding: 0 5px;
-        width: 150px;
+    header{
+        padding: 0;
+    }
+ 
+    .logo{
+        margin-right: 0;
+        padding: 0;
         margin-left: 10px;
+        
+    }
 
+    nav{
+        padding: 0;
     }
     
     
@@ -2984,9 +2792,7 @@ footer{
     .overflow-hidden{
         width: 150px;
     }
-    .Mobile{
-        margin-left: 50px;
-    }
+
 
     .videos_container{
         width: 95%;
@@ -3088,23 +2894,13 @@ footer{
 @media screen and (max-width: 460px){
     .Mobile{
         margin-left: 10px;
-        margin-right: 40px;
+        margin-right: 10px;
     }
     .nav-list{
-        width: 150vw; 
+        width: 170vw; 
     }
 
 
-    .btn_nav{
-        font-size: 10px;
-        padding: 0 5px;
-        width: 150px;
-        margin-left: 10px;
-
-    }
-    .apresentation h1{
-        font-size: 45px;
-    }
 
     .year_end{
         font-size: smaller;
@@ -3183,75 +2979,38 @@ footer{
 
 
 @media screen and (max-width: 406px){
-   
-   
+ 
     .services-contain{
         height: 850px;
     }
     .nav-list{
-        width: 160vw; 
+        width: 175vw; 
     }
-
 
 }
 
 
 @media screen and (max-width: 400px){
-    .login{
-        margin-left: 0;
-    }
-    .Mobile{
-        margin-left: 10px;
-        margin-right: 20px;
-    }
-  
 
-    .btn_nav{
-        font-size: 10px;
-        padding: 0 5px;
-        width: 150px;
-        margin-left: 10px;
-
-    }
   
-    .apresentation h4{
-        font-size: smaller;
-        max-width: 100%;
-    }
     .title_services__{
         font-size: small;
     }
    
 
-  .buttom_plus{
-    margin-top: 30px;
-  }
-  .nav-list{
-    width: 170vw;
+    .buttom_plus{
+        margin-top: 30px;
     }
-    .container_network_fixed{
-        width: 80%;
+    .nav-list{
+        width: 180vw; 
     }
-
-
-
-    
-
 }
    
 
 
 
 
-@media screen and (max-width: 369px){
-    .btn_nav{
-        font-size: 8px;
-        padding: 0 5px;
-        width: 120px;
-        margin-left: 10px;
-
-    }
-  
+@media screen and (max-width: 369px){  
     .modal_form_title h6{
         font-size: medium;
     }
@@ -3261,54 +3020,22 @@ footer{
     .year_end{
         font-size: x-small;
     }
-    .Mobile{
-        margin-right: 50px;
-    }
-    .apresentation h4{
-        max-width: 85%;
-    }
-    .icone_email, .icone_adress{
-        margin-right: 10px;
-    }
-}
-
-
-@media screen and (max-width: 354px){
     .nav-list{
-        width: 180vw;
+        width: 185vw; 
     }
-    .Mobile{
-        margin-right: 10px;
+    .apresentation h1{
+        font-size: xx-large;
     }
-    .services__buttom{
-        text-align: center;
-        width: 100px;
+
+    .apresentation h4{
+        font-size: small;
     }
-   
 }
+
 
 
 
 @media screen and (max-width: 345px){
-    .btn_nav{
-        font-size: 8px;
-        padding: 0 5px;
-        width: 100px;
-        margin-left: 10px;
-    }
-    
-    .nav-list{
-        width: 190vw;
-    }
-    .apresentation h1{
-        font-size: xx-large;
-        max-width: 95%;
-    }
-    .apresentation h4{
-        line-height: 20px;
-    }
-    
- 
     .services-contain{
     height: 1000px;
     }
@@ -3319,184 +3046,39 @@ footer{
    .text_message_content{
     height: 100%;
    }
+   .nav-list{
+    width: 195vw; 
+}
 }
 
 
-@media screen and (max-width: 335px){
-    .language{
-        margin: 0;
-    }
+
+
+
+@media screen and (max-width: 320px){
+    .services__buttom{
+        display: none;
+     }
 }
+
 
 @media screen and (max-width: 315px){
     .title_services__{
         font-size: x-small;
     }
     .nav-list{
-        width: 195vw;
+        width: 199vw; 
     }
+  
 }
 
-
-
-@media screen and (max-width: 300px){
-    .services__buttom{
-        display: none;
-     }
-     .container_network_fixed{
-        width: 90%;
-    }
-
-}
-
-@media screen and (max-width: 280px){
+@media screen and (max-width: 295px){
     .nav-list{
-        width: 210vw;
+        width: 210vw; 
+    }
+    .nav-list li{
+        font-size: x-small;
     }
 }
 
-@media screen and (max-width: 264px){
-    .contatts{
-        display: none;
-    }
-    .nav-list{
-        width: 220vw;
-    }
-}
-@media all and(max-width: 700px){
-	
-    
-    header{
-        width: 100%;
-        height: 100vh;   
-        background-color: #000;
-    }
-
-    nav{
-        position: relative;
-        height: 30vh;
-        width: 100%;
-        background-color: #fff;
-        padding: 0;
-    
-
-    }  
-    
-    .network_login{
-        height: 7vh;
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        padding: 0 70px 0 90px;
-        padding-top: 0;
-        background-color: #fff;
-    }
-
-
-    .network{
-        display: none;
-    }
-    .networks_fixed{
-        position: fixed;
-        display: block;
-        bottom: 5%;
-        right: 5px;
-        z-index: 100000000000000;
-        width: auto;
-        height: 200px;
-    }
-    .container_network_fixed{
-        display:flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 100%;
-    }
-
-   
-    .homebar{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 0;
-        display: flex;
-        justify-content: space-between;
-        padding: 0px 40px;
-    }
-    .logo{
-        margin-right: 20px;
-    }
-    .details_pred{
-        min-width: 70%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-size: smaller;
-        color: #2D348E;
-    }
-
-    .Mobile{
-        margin: 0;
-        margin-right: 40px;
-    }
-
-    .apresentation{
-        height: 70vh;
-        object-fit:100%;
-        background-position: center;
-    }
-    .apresentation h4{
-        font-size: 12px;
-    }
- 
-}
-
-
-@media all and (orientation:landscape) and (max-width:1000px){
-    header{
-        min-height: 400px !important;
-        display: block;
-        position: static;
-    }
-    nav{
-        
-       height: 150px !important;
-
-    }
-
-    .network_login{
-        height: 30px !important;
-    }
-
-    .language{
-        display: none;
-    }
-
-    .apresentation{
-        margin: 0;
-        padding: 0;
-        background-size: cover;
-
-    }
-    .apresentation div{
-        max-height: 100%;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .apresentation h1{
-        margin: 0;
-        padding: 0;
-    }
-
-    .apresentation h4{
-        font-size: small;
-        margin: 0;
-        padding: 0;
-    }
-
-
-}
 
