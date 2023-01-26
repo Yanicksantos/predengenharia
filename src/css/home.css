@@ -2955,7 +2955,18 @@ footer{
     }
     .buttom_plus{
         margin-top: 10px;
-    }   
+    }  
+    .btn_nav{
+        font-size: 10px;
+        padding: 0 5px;
+        width: 150px;
+        margin-left: 10px;
+
+    }
+    
+    
+    
+
 }
 
 @media screen and (max-width: 477px){
@@ -3059,6 +3070,18 @@ footer{
 
 
 @media screen and (max-width: 460px){
+    .Mobile{
+        margin-left: 10px;
+        margin-right: 40px;
+    }
+
+    .btn_nav{
+        font-size: 10px;
+        padding: 0 5px;
+        width: 150px;
+        margin-left: 10px;
+
+    }
     .apresentation h1{
         font-size: 45px;
     }
@@ -3117,11 +3140,19 @@ footer{
 
 @media screen and (max-width: 425px){
     .produts_message{
-        height: 450px;
+        height: 600px;
     }
    
    
-   
+   .text_message_content{
+    margin: 40px 0;
+   }
+
+   .text_message_content p{
+    font-size: small;
+   }
+
+
     .partnership_comments p{
 
         max-width: 100%;
@@ -3147,7 +3178,16 @@ footer{
         margin-left: 0;
     }
     .Mobile{
-        margin-left: 20px;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    .btn_nav{
+        font-size: 10px;
+        padding: 0 5px;
+        width: 150px;
+        margin-left: 10px;
+
     }
   
     .apresentation h4{
@@ -3180,6 +3220,13 @@ footer{
 
 
 @media screen and (max-width: 369px){
+    .btn_nav{
+        font-size: 8px;
+        padding: 0 5px;
+        width: 120px;
+        margin-left: 10px;
+
+    }
     .nav-list{
         width: 160vw;
     }
@@ -3221,6 +3268,13 @@ footer{
 
 
 @media screen and (max-width: 345px){
+    .btn_nav{
+        font-size: 8px;
+        padding: 0 5px;
+        width: 100px;
+        margin-left: 10px;
+    }
+    
     .nav-list{
         width: 190vw;
     }
@@ -3239,9 +3293,7 @@ footer{
     .buttom_plus{
         margin-top: 10px;
     }
-    .produts_message{
-        height: 500px;
-    }
+   
    .text_message_content{
     height: 100%;
    }
