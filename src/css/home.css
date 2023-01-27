@@ -2789,6 +2789,14 @@ footer{
 }
 
 @media screen and (max-width: 477px){
+
+    .apresentation h1{
+        font-size: x-large;
+    }
+
+    .apresentation h4{
+        font-size: smaller;
+    }
     .overflow-hidden{
         width: 150px;
     }
@@ -2892,6 +2900,12 @@ footer{
 
 
 @media screen and (max-width: 460px){
+    .network_login{
+        justify-content: flex-end;
+    }
+    .login{
+        text-align: end;
+    }
     .Mobile{
         margin-left: 10px;
         margin-right: 10px;
@@ -3081,4 +3095,21 @@ footer{
     }
 }
 
+@media screen and (max-width: 275px){
+    .language{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 255px){
+    .apresentation h1{
+        font-size: large;
+    }
+
+    .apresentation h4{
+        font-size: x-small;
+    }
+
+}
 
